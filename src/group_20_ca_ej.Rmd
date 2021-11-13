@@ -1,0 +1,19 @@
+---
+title: "Group 20 CA pullution burden"
+author: "Russell Fager, Hollie\tPennington"
+date: "11/13/2021"
+output: html_document
+---
+
+```{r setup, include=TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+```{r}
+ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+```
