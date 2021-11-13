@@ -11,9 +11,16 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(janitor)
 library(here)
+library(hexbin)
 ```
 
 ```{r}
 ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
   clean_names()
 ```
+
+```{r}
+ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + 
+  geom_point()
+```
+
