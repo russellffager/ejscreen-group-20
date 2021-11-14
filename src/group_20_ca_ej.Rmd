@@ -26,6 +26,10 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
         title = "% of CA White Population Living in Polluted Communites") + 
   scale_fill_gradient(low = "purple", high = "blue") + 
   theme_minimal()
-  
 ```
 **Figure 1. This density map shows the relationship between % white population and the aggregate CalEnviroScreen Community Pollution Score across >8,000 CA census tracts.**
+
+The overall trend suggest that areas with a higher percentage of white people have a  lower environmental score. Areas with lower percentage of white people have a higher environmental score. This suggest that when the population has more white people, there is less pollution. 
+
+
+CITATION: California Office of Environmental Health (2018). "CalEnviroScreen 3.0: A Tool For Advancing Environmental Justice," *California Environmental Protection Agency.* https://github.com/russellffager/ejscreen-group-20.git
