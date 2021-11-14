@@ -28,4 +28,4 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   theme_minimal()
   
 ```
-
+**Figure 1. This density map shows the relationship between % white population and the aggregate CalEnviroScreen Community Pollution Score across >8,000 CA census tracts.**
