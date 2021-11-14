@@ -23,6 +23,9 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + 
   geom_hex() +
   labs (x = "% White Population", y = "CalEnviro Community Pollution Score",
-        title = "% of CA White Population Living in Polluted Communites")
+        title = "% of CA White Population Living in Polluted Communites") + 
+  scale_fill_gradient(low = "purple", high = "blue") + 
+  theme_minimal()
+  
 ```
 
